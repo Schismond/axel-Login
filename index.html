@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>OXY GYM</title>
+  </head>
+  <body>
+    <div class="center">
+      <div class="logo">OXY GYM</div>
+      <!-- form 1 -->
+      <form action="#">
+        <div class="info">
+          <div class="form-control">
+            <input type="text" autocomplete="off" id="email" required />
+            <label>
+              <span style="transition-delay: 0ms">e</span
+              ><span style="transition-delay: 50ms">m</span
+              ><span style="transition-delay: 100ms">a</span
+              ><span style="transition-delay: 150ms">i</span
+              ><span style="transition-delay: 200ms">l</span>
+            </label>
+          </div>
+          <div class="form-control">
+            <input type="password" id="password" required />
+            <label>
+              <span style="transition-delay: 0ms">P</span
+              ><span style="transition-delay: 50ms">a</span
+              ><span style="transition-delay: 100ms">s</span
+              ><span style="transition-delay: 150ms">s</span
+              ><span style="transition-delay: 200ms">w</span
+              ><span style="transition-delay: 250ms">o</span
+              ><span style="transition-delay: 300ms">r</span
+              ><span style="transition-delay: 350ms">d</span>
+            </label>
+          </div>
+        </div>
+        <div class="connexion">
+          <div class="remember">
+            <label class="container">
+              <input type="checkbox" />
+              <div class="checkmark"></div>
+            </label>
+            <label for="email">Se souvenir de moi</label>
+          </div>
+          <div class="forget">
+            <a id="reset-password" href="#">mot de passe oublier ?</a>
+          </div>
+        </div>
+        <p>tu veux inscrire ? <a href="#">click ici</a></p>
+
+        <div class="login">
+          <input type="submit" class="btn" id="bttn" value="se connecter" />
+        </div>
+      </form>
+
+      <!-- form 2 envoi du code  -->
+
+      <form action="#" style="display: none">
+        <h1>Mot de passe oublié</h1>
+        <div class="form-control">
+          <input type="text" autocomplete="off" id="email-forgot" required />
+          <label>
+            <span style="transition-delay: 0ms">e</span
+            ><span style="transition-delay: 50ms">m</span
+            ><span style="transition-delay: 100ms">a</span
+            ><span style="transition-delay: 150ms">i</span
+            ><span style="transition-delay: 200ms">l</span>
+          </label>
+        </div>
+        <p>Entré votre adresse email</p>
+
+        <input type="submit" value="recupérer" id="sendCodeBtn" class="btn" />
+      </form>
+
+      <!-- form 3 confirmation du code  -->
+
+      <form action="#" style="display: none">
+        <h1>Entré le code</h1>
+        <div class="form-control">
+          <input type="text" autocomplete="off" id="insert-code" required />
+          <label>
+            <span style="transition-delay: 0ms">c</span
+            ><span style="transition-delay: 50ms">o</span
+            ><span style="transition-delay: 100ms">d</span
+            ><span style="transition-delay: 150ms">e</span>
+          </label>
+          <p id="falseCode"></p>
+        </div>
+        <p>
+          nous avons envoyer un code de recuperation a votre mail confirmer le
+          code pour que vous pouvez réinitialisé votre mot de passe
+        </p>
+        <input
+          type="submit"
+          value="réinitialisé"
+          id="confirmCodeBtn"
+          class="btn"
+        />
+      </form>
+
+      <!-- form 4 changement de mot de passe -->
+      <form action="#" style="display: none">
+        <h1>Créé nouveau mot de passe</h1>
+        <div class="form-control">
+          <input type="password" id="password1" name="password" required />
+          <label>
+            <span style="transition-delay: 0ms">n</span
+            ><span style="transition-delay: 50ms">e</span
+            ><span style="transition-delay: 100ms">w</span
+            ><span style="transition-delay: 150ms"> </span
+            ><span style="transition-delay: 200ms">p</span
+            ><span style="transition-delay: 250ms">a</span
+            ><span style="transition-delay: 300ms">s</span
+            ><span style="transition-delay: 350ms">s</span
+            ><span style="transition-delay: 400ms">w</span
+            ><span style="transition-delay: 450ms">o</span
+            ><span style="transition-delay: 500ms">r</span
+            ><span style="transition-delay: 550ms">d</span>
+          </label>
+        </div>
+        <div class="form-control">
+          <input type="password" id="password2" name="password" required />
+          <label>
+            <span style="transition-delay: 0ms">c</span
+            ><span style="transition-delay: 50ms">o</span
+            ><span style="transition-delay: 100ms">n</span
+            ><span style="transition-delay: 150ms">f</span
+            ><span style="transition-delay: 200ms">i</span
+            ><span style="transition-delay: 250ms">r</span
+            ><span style="transition-delay: 300ms">m</span>
+          </label>
+        </div>
+        <input
+          type="submit"
+          value="réinitialisé"
+          id="set-new-password"
+          class="btn"
+        />
+      </form>
+
+      <!-- form 5 recupération réussite -->
+      <form action="#" style="display: none">
+        <h1>Recupération Réussite</h1>
+        <h2>
+          votre requette de renitialiser le mot de passe est bien réussit ,
+          click sur le button desus pour retourner à la page de connexion
+        </h2>
+        <input
+          type="submit"
+          value="connexion"
+          id="back to connexion"
+          class="btn"
+        />
+      </form>
+    </div>
+  </body>
+</html>
